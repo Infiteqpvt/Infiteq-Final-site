@@ -7,6 +7,29 @@
 
 
 
+/* Animation for scrolling */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.block-a{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+
+
+
 /* #preloader {
  
     background: #000 url(images/preloder.gif) no-repeat center center;
@@ -362,7 +385,7 @@ nav ul li a:focus {
     font-family: sans-serif;
 }
 
-#services>h1 {
+#services>.block-a >h1 {
     font-size: 2vmax;
     text-align: center;
     color: #6EE8FC;
@@ -501,6 +524,28 @@ nav ul li a:focus {
     width: 100%;
     object-fit: cover;
 }
+
+
+/* Animation for scrolling */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+#about>#about_box>.parts>.block-a{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+/* Animation end */
 
 .content {
     height: 25%;
